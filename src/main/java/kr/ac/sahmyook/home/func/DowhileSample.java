@@ -48,13 +48,9 @@ public class DowhileSample {
                 System.out.println("번호를 다시 입력해주세요");
                 bugerKingMenu();
             } else {
-                order += menu[num];
-                order += ", ";
+                System.out.println(menu[num] + "메뉴 주문 받았습니다.");
             }
         } while(num != 6);
-
-        System.out.println("주문 내역을 출력합니다.");
-        System.out.println(order);
     }
 
     public void isStringAlphabet(){

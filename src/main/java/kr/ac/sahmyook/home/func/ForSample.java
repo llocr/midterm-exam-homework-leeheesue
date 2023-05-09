@@ -57,7 +57,7 @@ public class ForSample {
 
         System.out.println("별 찍기를 시작합니다.");
         for (int i = 0; i < row; i++) {
-            for(int j = 0; j < col; i++) {
+            for(int j = 0; j < col; j++) {
                 System.out.print("*");
             }
             System.out.println();

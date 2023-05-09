@@ -9,20 +9,28 @@ public class SwitchSample {
         int num1 = sc.nextInt();
         System.out.print("두 번째 숫자를 입력해 주세요 : ");
         int num2 = sc.nextInt();
-        System.out.println("연산자를 입력해주세요 : ");
-        String op = sc.nextLine();
+        System.out.print("연산자를 입력해주세요 : ");
+        String  op = sc.next();
 
-        switch (op.charAt(0)) {
-            case '+' :
-                System.out.println(num1 + op.charAt(0) + num2 + "=" + (num1+num2));
-            case '-' :
-                System.out.println(num1 + op.charAt(0) + num2 + "=" + (num1-num2));
-            case '*' :
-                System.out.println(num1 + op.charAt(0) + num2 + "=" + (num1*num2));
-            case '/' :
-                System.out.println(num1 + op.charAt(0) + num2 + "=" + (num1/num2));
-            case '%' :
-                System.out.println(num1 + op.charAt(0) + num2 + "=" + (num1%num2));;
+        switch (op) {
+            case "+" :
+                System.out.println(num1 + op + num2 + "=" + (num1+num2));
+                break;
+            case "-" :
+                System.out.println(num1 + op + num2 + "=" + (num1-num2));
+                break;
+            case "*" :
+                System.out.println(num1 + op + num2 + "=" + (num1*num2));
+                break;
+            case "/" :
+                System.out.println(num1 + op+ num2 + "=" + (num1/num2));
+                break;
+            case "%" :
+                System.out.println(num1 + op + num2 + "=" + (num1%num2));;
+                break;
+            default:
+                System.out.println("연산자가 올바르지 않습니다.");
+                calculator();
         }
     }
 

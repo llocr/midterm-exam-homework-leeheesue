@@ -16,7 +16,7 @@ public class WhileSample {
                 printUniCode();
             }
 
-            if(c.equals(0)) {
+            if(c.contains("0")) {
                 System.out.println("프로그램을 종료합니다.");
                 break;
             }

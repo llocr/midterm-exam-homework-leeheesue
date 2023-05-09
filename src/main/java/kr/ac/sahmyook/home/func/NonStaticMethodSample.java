@@ -26,8 +26,10 @@ public class NonStaticMethodSample {
     public void testRandom(){
         Random random = new Random();
 
-        int ranIntnum = 
+        int ranIntNum = random.nextInt();
+        double ranDoubleNum = random.nextDouble();
 
+        System.out.println("생성된 랜덤 정수 : " + ranIntNum);
+        System.out.println("생성된 랜덤 실수 : " + ranDoubleNum);
     }
-
 }
